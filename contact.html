@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <title>contat us</title>
+    
+        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+       
+       
+    </head>
+    
+    <body style="background-color: limegreen;">
+        <div style="background-color: white; height: 80%; width: 70%; margin: 10%; box-shadow: 5px 5px 5px gray" class="form-control">
+        <form style=" margin: 5%; height: 80%; width: 80%;">
+            
+        <a href="homepage.html"><img src="back.jpg" height="10%" width="10%"></a>
+       
+       <center><h1 style="color: limegreen;">संपर्क</h1></center>
+        
+        <input type="text" name="fname" id="fname" class="form-control" placeholder="पूर्ण नाव" style="background-color: cornsilk; box-shadow: 5px 5px 5px gray" required><br>
+            
+        <input type="email" name="email" id="email" class="form-control" placeholder="ईमेल " style="background-color: cornsilk; box-shadow: 5px 5px 5px gray" required><br>
+
+        <textarea placeholder="संदेश ..... " class="form-control" id="massege" style="background-color: cornsilk; box-shadow: 5px 5px 5px gray"></textarea><br>
+            
+        <center><button type="button" id="buttom" class="btn " style="background-color: limegreen; color: azure;" onclick="sub()"><h4>Submit</h4></button></center>
+            
+        
+        </form>
+            
+            <script>
+            function sub(){
+                
+                var a,b,c;
+                
+                a=document.getElementById("fname").value;
+                window.localStorage.setItem('पूर्ण नाव',a);
+                
+                b=document.getElementById("email").value;
+                window.localStorage.setItem('ईमेल',b);
+                
+                c=document.getElementById("massege").value;
+                window.localStorage.setItem('संदेश',c);
+                
+                alert("submitted succesfully.");
+            }
+            </script>
+            
+        </div>
+        
+    </body>
+    
+    
+    
